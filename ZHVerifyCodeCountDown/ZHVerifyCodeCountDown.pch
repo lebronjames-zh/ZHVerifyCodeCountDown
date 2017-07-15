@@ -1,0 +1,36 @@
+//
+//  ZHVerifyCodeCountDown.pch
+//  ZHVerifyCodeCountDown
+//
+//  Created by 曾浩 on 2017/7/15.
+//  Copyright © 2017年 曾浩. All rights reserved.
+//
+
+#ifndef ZHVerifyCodeCountDown_pch
+#define ZHVerifyCodeCountDown_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define COLOR_GREEN COLOR(98, 208, 131)
+#define COLOR(R,G,B) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1.0]
+#define COLOR_Alpha(R,G,B,alp) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:alp]
+
+#define COLOR_DEFAULT [UIColor colorWithRed:207.0/255.0 green:207.0/255.0 blue:207.0/255.0 alpha:1.0]
+#define Color_Assist_one COLOR_Alpha(181, 181, 181, 1.0)
+
+#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+
+#define  IMAGE_RATE_WIDTH (SCREEN_WIDTH/375.0)    //750
+#define  IMAGE_RATE_HEIGHT (SCREEN_HEIGHT/667.0)  //1334
+
+#define  RATE_WIDTH (SCREEN_WIDTH/375.0)    //320
+#define  RATE_HEIGHT (SCREEN_HEIGHT/568.0)  //568.0
+
+#define height(h) (IMAGE_RATE_HEIGHT*h)
+#define width(w) (IMAGE_RATE_WIDTH*w)
+
+#define FONT(R) [UIFont systemFontOfSize:R]
+
+#endif /* ZHVerifyCodeCountDown_pch */
